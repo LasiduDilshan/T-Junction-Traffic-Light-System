@@ -1,0 +1,98 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do 3_Way_Junction_1_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/_Sem\ 4/2_Electronic\ Circuit\ Design/FPGA/_Degital\ Circuit\ Design(My)/3\ Way\ Junction(1) {C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)/traffic_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module traffic_controller
+# 
+# Top level modules:
+# 	traffic_controller
+# vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/_Sem\ 4/2_Electronic\ Circuit\ Design/FPGA/_Degital\ Circuit\ Design(My)/3\ Way\ Junction(1) {C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)/tb_traffic_controller_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_traffic_controller_1
+# 
+# Top level modules:
+# 	tb_traffic_controller_1
+# 
+vsim work.tb_traffic_controller_1
+# vsim work.tb_traffic_controller_1 
+# Loading work.tb_traffic_controller_1
+# Loading work.traffic_controller
+add wave -position end  sim:/tb_traffic_controller_1/w_to_n
+add wave -position end  sim:/tb_traffic_controller_1/w_to_e
+add wave -position end  sim:/tb_traffic_controller_1/rst
+add wave -position end  sim:/tb_traffic_controller_1/n_to_w
+add wave -position end  sim:/tb_traffic_controller_1/n_to_e
+add wave -position end  sim:/tb_traffic_controller_1/e_to_w
+add wave -position end  sim:/tb_traffic_controller_1/e_to_n
+add wave -position end  sim:/tb_traffic_controller_1/clk
+run
+# At time 0: w_to_e = 110, w_to_n = 100, e_to_w = 110, e_to_n = 110, n_to_e = 100, n_to_w = 100
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

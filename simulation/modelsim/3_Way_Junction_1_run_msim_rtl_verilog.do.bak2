@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/_Sem\ 4/2_Electronic\ Circuit\ Design/FPGA/_Degital\ Circuit\ Design(My)/3\ Way\ Junction(1) {C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)/traffic_controller.v}
+vlog -vlog01compat -work work +incdir+C:/Users/HP/Desktop/_Sem\ 4/2_Electronic\ Circuit\ Design/FPGA/_Degital\ Circuit\ Design(My)/3\ Way\ Junction(1) {C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)/tb_traffic_controller.v}
+

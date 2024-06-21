@@ -1,0 +1,46 @@
+|tb_traffic_controller_1
+
+
+|tb_traffic_controller_1|traffic_controller:uut
+w_to_e[0] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+w_to_e[1] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+w_to_e[2] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+w_to_n[0] <= w_to_n.DB_MAX_OUTPUT_PORT_TYPE
+w_to_n[1] <= w_to_n.DB_MAX_OUTPUT_PORT_TYPE
+w_to_n[2] <= w_to_n.DB_MAX_OUTPUT_PORT_TYPE
+e_to_w[0] <= e_to_w.DB_MAX_OUTPUT_PORT_TYPE
+e_to_w[1] <= e_to_w.DB_MAX_OUTPUT_PORT_TYPE
+e_to_w[2] <= e_to_w.DB_MAX_OUTPUT_PORT_TYPE
+e_to_n[0] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+e_to_n[1] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+e_to_n[2] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+n_to_e[0] <= n_to_e.DB_MAX_OUTPUT_PORT_TYPE
+n_to_e[1] <= n_to_e.DB_MAX_OUTPUT_PORT_TYPE
+n_to_e[2] <= n_to_e.DB_MAX_OUTPUT_PORT_TYPE
+n_to_w[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+n_to_w[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+n_to_w[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => sub_state[0].CLK
+clk => sub_state[1].CLK
+clk => state[0].CLK
+clk => state[1].CLK
+clk => state[2].CLK
+rst => count[0].ACLR
+rst => count[1].ACLR
+rst => count[2].ACLR
+rst => count[3].ACLR
+rst => count[4].ACLR
+rst => count[5].ACLR
+rst => sub_state[0].ACLR
+rst => sub_state[1].ACLR
+rst => state[0].ACLR
+rst => state[1].ACLR
+rst => state[2].ACLR
+
+
