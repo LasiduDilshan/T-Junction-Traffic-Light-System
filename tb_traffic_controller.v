@@ -1,59 +1,48 @@
 `timescale 1ns / 1ps
 
-module tb_traffic_controller;
+module tb_traffic_controller();
 
-    // Inputs
-    reg clk = 0;
+    reg clk =0;
     reg rst;
-
-    // Outputs
-    wire [2:0] w_to_e;
-    wire [2:0] w_to_n;
-    wire [2:0] e_to_w;
-    wire [2:0] e_to_n;
-    wire [2:0] n_to_e;
-    wire [2:0] n_to_w;
-
-    // Instantiate the Unit Under Test (UUT)
-    traffic_controller uut (
-        .w_to_e(w_to_e), 
-        .w_to_n(w_to_n), 
-        .e_to_w(e_to_w), 
-        .e_to_n(e_to_n), 
-        .n_to_e(n_to_e), 
-        .n_to_w(n_to_w), 
-        .clk(clk), 
+    
+    wire [2:0] w_to_e_tb;
+    wire [2:0] w_to_n_tb;
+    wire [2:0] e_to_w_tb;
+    wire [2:0] e_to_n_tb;
+    wire [2:0] n_to_e_tb;
+    wire [2:0] n_to_w_tb;
+    
+    traffic_controller dut (
+        .w_to_e(w_to_e_tb),
+        .w_to_n(w_to_n_tb),
+        .e_to_w(e_to_w_tb),
+        .e_to_n(e_to_n_tb),
+        .n_to_e(n_to_e_tb),
+        .n_to_w(n_to_w_tb),
+        .clk(clk),
         .rst(rst)
     );
 
     // Clock generation
-    initial begin
-      #5 clk = ~clk; // Toggle clock every 5 ns
-    end
+    always #5 clk = ~clk;
 
-    // Test sequence
+    // Reset assertion and de-assertion
     initial begin
-        // Initialize Inputs
         rst = 1;
         #10;
         rst = 0;
+    end
 
-        // Wait for the state to change multiple times
+    // Monitor the traffic light outputs
+    always @(posedge clk) begin
+        $display("Time = %0t: w_to_e = %b, w_to_n = %b, e_to_w = %b, e_to_n = %b, n_to_e = %b, n_to_w = %b",
+                 $time, w_to_e_tb, w_to_n_tb, e_to_w_tb, e_to_n_tb, n_to_e_tb, n_to_w_tb);
+    end
+
+    // Stop simulation after some time (adjust as needed)
+    initial begin
         #1000;
-
-        // Test Reset
-        rst = 1;
-        #10;
-        rst = 0;
-        #100;
-
-        $stop;
-    end
-
-    // Monitor the outputs
-    initial begin
-        $monitor("At time %0t: w_to_e = %b, w_to_n = %b, e_to_w = %b, e_to_n = %b, n_to_e = %b, n_to_w = %b", 
-                 $time, w_to_e, w_to_n, e_to_w, e_to_n, n_to_e, n_to_w);
+        $finish;
     end
 
 endmodule
