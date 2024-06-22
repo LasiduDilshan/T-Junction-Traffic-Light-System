@@ -182,6 +182,10 @@ The sub-states cycle through RY -> G -> Y -> R.
     </tr>
 </table>
 
+### Teastbench 
+
+![sodapdf-converted](https://github.com/LasiduDilshan/T-Junction-Traffic-Light-System/assets/126545632/09c1d9f6-3af2-4780-9e89-de90ee21aaee)
+
 ### Counter
 A counter is used to determine the duration of each sub-state. When the counter reaches a specified threshold, the sub-state transitions to the next sub-state. The count value is reset for each transition.
 
