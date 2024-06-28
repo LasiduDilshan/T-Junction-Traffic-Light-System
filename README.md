@@ -184,7 +184,7 @@ The sub-states cycle through RY -> G -> Y -> R.
 
 ### Teastbench 
 
-![sodapdf-converted](https://github.com/LasiduDilshan/T-Junction-Traffic-Light-System/assets/126545632/09c1d9f6-3af2-4780-9e89-de90ee21aaee)
+![wave](https://github.com/LasiduDilshan/T-Junction-Traffic-Light-System/assets/126545632/f6c36922-d1cd-4b02-a6f8-f5b1f48aa4c5)
 
 ### Counter
 A counter is used to determine the duration of each sub-state. When the counter reaches a specified threshold, the sub-state transitions to the next sub-state. The count value is reset for each transition.
@@ -226,6 +226,11 @@ The output logic sets the traffic light colors based on the current main state a
 Assuming a clock frequency of 100 MHz and a count threshold of 25,000,000:
 - Each sub-state transition occurs every 0.25 seconds (25,000,000 / 100,000,000).
 - The total time for each full cycle of sub-states (RY -> G -> Y -> R) is 1 second.
+- In the given code, we have utilized the DE0-Nano board, which operates at a frequency of 50MHz. Consequently, the time interval between two transitions is 2 seconds.
+
+### Simple Demo
+
+![WhatsApp Image 2024-06-28 at 16 18 05_67c3fb4b](https://github.com/LasiduDilshan/T-Junction-Traffic-Light-System/assets/126545632/d3e186f0-9fde-4247-b489-b467cd130707)
 
 ### Summary
 This traffic controller implementation for a 3-way intersection uses a finite state machine with main and sub-state transitions to manage the traffic lights. The state transitions are driven by a counter that ensures each state and sub-state lasts for a specified duration, providing predictable and consistent traffic control. The output logic sets the traffic lights based on the current state and sub-state, ensuring safe and efficient traffic flow. The provided testbench helps verify the functionality by simulating the behavior and observing the changes in traffic lights over time.
