@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+//`timescale 1ns / 1ps
 
 module traffic_controller(
     output reg [2:0] w_to_e, // West to East light
@@ -29,21 +29,24 @@ module traffic_controller(
 
     reg [2:0] state;
     reg [1:0] sub_state;
-    reg [5:0] count; // Counter to keep track of time in each phase
+    reg [26:0] count; // Counter to keep track of time in each phase (27 bits to cover the range)
+
+    // Count threshold for 2 seconds at 50MHz clock
+    parameter [26:0] COUNT_THRESHOLD = 27'd100_000_000;
 
     // State transition logic
     always @(posedge clk or posedge rst) begin
         if (rst) begin
             state <= PHASE1;
             sub_state <= RY;
-            count <= 6'b000000;
+            count <= 27'b0;
         end else begin
-            if (count == 6'b111111) begin // Example count threshold for sub-state transition
-                count <= 6'b000000;
+            if (count >= COUNT_THRESHOLD - 1) begin
+                count <= 27'b0;
                 if (sub_state == R) begin
                     sub_state <= RY;
-                    state <= state + 1;
-                    if (state == PHASE3) state <= PHASE1; // Loop back to Phase 1 after Phase 3
+                    if (state != PHASE3)  state <= state + 1;
+                    else state <= PHASE1; // Loop back to Phase 1 after Phase 3
                 end else begin
                     sub_state <= sub_state + 1;
                 end
@@ -54,7 +57,7 @@ module traffic_controller(
     end
     
     // Output logic based on state and sub-state
-    always @(*) begin
+    always @(state or sub_state) begin
         // Default all lights to RED
         w_to_e = RED;
         w_to_n = RED;

@@ -2,44 +2,44 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\HP\Desktop\_Sem 4\2_Electronic Circuit Design\FPGA\_Degital Circuit Design(My)\3 Way Junction(1)\simulation\modelsim
-vtb_traffic_controller_1
+Z0 dC:\Users\HP\Desktop\Sem 3\1_Electronic Cirucits and Analysis\T-Junction-Traffic-Light-System\simulation\modelsim
+vtb_traffic_controller
 !i10b 1
-!s100 KA_G;82PiZY:Q;IQ77<2d1
-IG5K>cVGVMGQS2heRg=71F2
-VAW^PzPkGQ]7onSk_S>n^Y3
-Z1 dC:\Users\HP\Desktop\_Sem 4\2_Electronic Circuit Design\FPGA\_Degital Circuit Design(My)\3 Way Junction(1)\simulation\modelsim
-w1718971407
-8C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)/tb_traffic_controller_1.v
-FC:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)/tb_traffic_controller_1.v
+!s100 Lf5>QG8F@[2VO5G3QCgXa1
+IkadG1ogG]:A1c_;[2Nc?30
+VK@k^LT^jYh^[]6]Nm;0ll1
+Z1 dC:\Users\HP\Desktop\Sem 3\1_Electronic Cirucits and Analysis\T-Junction-Traffic-Light-System\simulation\modelsim
+w1719570756
+8C:/Users/HP/Desktop/Sem 3/1_Electronic Cirucits and Analysis/T-Junction-Traffic-Light-System/tb_traffic_controller.v
+FC:/Users/HP/Desktop/Sem 3/1_Electronic Cirucits and Analysis/T-Junction-Traffic-Light-System/tb_traffic_controller.v
 L0 3
 Z2 OV;L;10.1d;51
 r1
 !s85 0
 31
-!s108 1718971420.169000
-!s107 C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)/tb_traffic_controller_1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)|C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)/tb_traffic_controller_1.v|
+!s108 1719570834.680000
+!s107 C:/Users/HP/Desktop/Sem 3/1_Electronic Cirucits and Analysis/T-Junction-Traffic-Light-System/tb_traffic_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/Sem 3/1_Electronic Cirucits and Analysis/T-Junction-Traffic-Light-System|C:/Users/HP/Desktop/Sem 3/1_Electronic Cirucits and Analysis/T-Junction-Traffic-Light-System/tb_traffic_controller.v|
 !s101 -O0
 Z3 o-vlog01compat -work work -O0
-Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)} -O0
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/HP/Desktop/Sem 3/1_Electronic Cirucits and Analysis/T-Junction-Traffic-Light-System} -O0
 vtraffic_controller
-I?@4>ZO^k>i_Xii7:L;a;K0
-V=oPjedn:?]GmfF2akiUjE3
+IYU:UMd3^9SPeR;L=[UHhM2
+V3AV1a>JR5A1gzTdf_<hN90
 R1
-w1718971123
-8C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)/traffic_controller.v
-FC:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)/traffic_controller.v
+w1719570810
+8C:/Users/HP/Desktop/Sem 3/1_Electronic Cirucits and Analysis/T-Junction-Traffic-Light-System/traffic_controller.v
+FC:/Users/HP/Desktop/Sem 3/1_Electronic Cirucits and Analysis/T-Junction-Traffic-Light-System/traffic_controller.v
 L0 3
 R2
 r1
 31
 R3
 !i10b 1
-!s100 GRoMPXmYg<8oUehQ5kW`<3
+!s100 aeZ5nBUl55UG]B^=W57[I0
 !s85 0
-!s108 1718971420.119000
-!s107 C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)/traffic_controller.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)|C:/Users/HP/Desktop/_Sem 4/2_Electronic Circuit Design/FPGA/_Degital Circuit Design(My)/3 Way Junction(1)/traffic_controller.v|
+!s108 1719570834.617000
+!s107 C:/Users/HP/Desktop/Sem 3/1_Electronic Cirucits and Analysis/T-Junction-Traffic-Light-System/traffic_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/Sem 3/1_Electronic Cirucits and Analysis/T-Junction-Traffic-Light-System|C:/Users/HP/Desktop/Sem 3/1_Electronic Cirucits and Analysis/T-Junction-Traffic-Light-System/traffic_controller.v|
 !s101 -O0
 R4

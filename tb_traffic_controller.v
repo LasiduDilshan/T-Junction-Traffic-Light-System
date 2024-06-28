@@ -1,5 +1,12 @@
 `timescale 1ns / 1ps
 
+/*
+Note: 
+You must change the line 35 in traffic_controller.v as 
+           >>parameter [26:0] COUNT_THRESHOLD = 27'd10
+			  to observe the testbench 100ns to 100ns.
+*/
+
 module tb_traffic_controller();
 
     reg clk =0;

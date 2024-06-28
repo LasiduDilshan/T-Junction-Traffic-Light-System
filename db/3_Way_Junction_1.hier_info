@@ -1,7 +1,7 @@
-|tb_traffic_controller_1
+|tb_traffic_controller
 
 
-|tb_traffic_controller_1|traffic_controller:uut
+|tb_traffic_controller|traffic_controller:dut
 w_to_e[0] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
 w_to_e[1] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
 w_to_e[2] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
@@ -26,6 +26,27 @@ clk => count[2].CLK
 clk => count[3].CLK
 clk => count[4].CLK
 clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
 clk => sub_state[0].CLK
 clk => sub_state[1].CLK
 clk => state[0].CLK
@@ -37,6 +58,27 @@ rst => count[2].ACLR
 rst => count[3].ACLR
 rst => count[4].ACLR
 rst => count[5].ACLR
+rst => count[6].ACLR
+rst => count[7].ACLR
+rst => count[8].ACLR
+rst => count[9].ACLR
+rst => count[10].ACLR
+rst => count[11].ACLR
+rst => count[12].ACLR
+rst => count[13].ACLR
+rst => count[14].ACLR
+rst => count[15].ACLR
+rst => count[16].ACLR
+rst => count[17].ACLR
+rst => count[18].ACLR
+rst => count[19].ACLR
+rst => count[20].ACLR
+rst => count[21].ACLR
+rst => count[22].ACLR
+rst => count[23].ACLR
+rst => count[24].ACLR
+rst => count[25].ACLR
+rst => count[26].ACLR
 rst => sub_state[0].ACLR
 rst => sub_state[1].ACLR
 rst => state[0].ACLR

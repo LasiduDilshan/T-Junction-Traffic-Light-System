@@ -12,7 +12,8 @@ entity traffic_controller is
         RY              : vl_logic_vector(1 downto 0) := (Hi0, Hi0);
         G               : vl_logic_vector(1 downto 0) := (Hi0, Hi1);
         Y               : vl_logic_vector(1 downto 0) := (Hi1, Hi0);
-        R               : vl_logic_vector(1 downto 0) := (Hi1, Hi1)
+        R               : vl_logic_vector(1 downto 0) := (Hi1, Hi1);
+        COUNT_THRESHOLD : vl_logic_vector(26 downto 0) := (Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi0, Hi1, Hi0, Hi1, Hi0)
     );
     port(
         w_to_e          : out    vl_logic_vector(2 downto 0);
@@ -36,4 +37,5 @@ entity traffic_controller is
     attribute mti_svvh_generic_type of G : constant is 2;
     attribute mti_svvh_generic_type of Y : constant is 2;
     attribute mti_svvh_generic_type of R : constant is 2;
+    attribute mti_svvh_generic_type of COUNT_THRESHOLD : constant is 2;
 end traffic_controller;
