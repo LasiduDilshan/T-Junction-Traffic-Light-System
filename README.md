@@ -226,6 +226,7 @@ The output logic sets the traffic light colors based on the current main state a
 Assuming a clock frequency of 100 MHz and a count threshold of 25,000,000:
 - Each sub-state transition occurs every 0.25 seconds (25,000,000 / 100,000,000).
 - The total time for each full cycle of sub-states (RY -> G -> Y -> R) is 1 second.
+- In the given code, we have utilized the DE0-Nano board, which operates at a frequency of 50MHz. Consequently, the time interval between two transitions is 2 seconds.
 
 ### Simple Demo
 
