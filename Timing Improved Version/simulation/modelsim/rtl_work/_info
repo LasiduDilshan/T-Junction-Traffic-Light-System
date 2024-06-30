@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\HP\Desktop\New folder\simulation\modelsim
+vtb_traffic_controller
+!i10b 1
+!s100 mFY`k9E>N?LUCZ]EcFnd90
+I=U[aK[B<d?QSPRHDPc[lM3
+VK@k^LT^jYh^[]6]Nm;0ll1
+Z1 dC:\Users\HP\Desktop\New folder\simulation\modelsim
+w1719719175
+8C:/Users/HP/Desktop/New folder/tb_traffic_controller.v
+FC:/Users/HP/Desktop/New folder/tb_traffic_controller.v
+L0 10
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1719719276.249000
+!s107 C:/Users/HP/Desktop/New folder/tb_traffic_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/New folder|C:/Users/HP/Desktop/New folder/tb_traffic_controller.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/HP/Desktop/New folder} -O0
+vtraffic_controller
+I9`M2HgOeTGJ?T2V26M1:o0
+VU=D8jV8=YK8OLcWTAFKjb2
+R1
+w1719719249
+8C:/Users/HP/Desktop/New folder/traffic_controller.v
+FC:/Users/HP/Desktop/New folder/traffic_controller.v
+L0 3
+R2
+r1
+31
+R3
+!i10b 1
+!s100 eR0O`KN5@g;TnJCQUjgf;1
+!s85 0
+!s108 1719719276.173000
+!s107 C:/Users/HP/Desktop/New folder/traffic_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/HP/Desktop/New folder|C:/Users/HP/Desktop/New folder/traffic_controller.v|
+!s101 -O0
+R4
