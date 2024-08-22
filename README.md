@@ -1,4 +1,4 @@
-### Implementation of a Traffic Controller for a 3-Way Intersection
+### Implementation of a Traffic Controller for a 3-Way Intersection 🟢🟡🔴
 
 This implementation of a traffic controller for a 3-way intersection uses a finite state machine (FSM) with main states and sub-states to manage the traffic lights. The lights are controlled for three directions: West to East, West to North, East to West, East to North, North to East, and North to West. The traffic light transitions are based on a clock signal.
 
